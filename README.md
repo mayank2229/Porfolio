@@ -79,7 +79,7 @@ cd Porfolio
 ## 📬 Contact
 
 * 📧 Email: [mayankmishra29280@gmail.com](mailto:mayankmishra29280@gmail.com)
-* 💼 LinkedIn: (Add your LinkedIn link)
+* 💼 LinkedIn: www.linkedin.com/in/mayank-mishra-3353972a8
 * 🐙 GitHub: https://github.com/mayank2229
 
 ---
