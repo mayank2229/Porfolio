@@ -71,7 +71,8 @@ cd Porfolio
 
 ## 📸 Screenshots
 
-*(Add screenshots of your website here)*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4de67964-8aaa-4175-9b74-c23e2142f535" />
+
 
 ---
 
