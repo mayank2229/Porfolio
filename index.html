@@ -206,7 +206,7 @@ nav {
 .hero-text h1 {
   font-family: 'Syne', sans-serif;
   font-size: clamp(2.6rem, 5vw, 4.2rem);
-  font-weight: 800; line-height: 1.05;
+  font-weight: 800; line-height: 1.15;
   letter-spacing: -0.03em;
   color: var(--text);
   animation: fadeUp 0.8s 0.1s both;
@@ -258,6 +258,7 @@ nav {
 /* Hero photo */
 .hero-photo-wrap {
   display: flex; justify-content: center; align-items: center;
+  position: relative;
   animation: fadeIn 1s 0.3s both;
 }
 .hero-photo-ring {
@@ -606,10 +607,10 @@ footer strong { color: var(--accent); }
   .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--nav-bg); backdrop-filter: blur(20px); padding: 1rem; flex-direction: column; gap: 0.25rem; border-bottom: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .menu-btn { display: block; }
-  .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; padding-top: 2rem; }
-  .hero-photo-wrap { order: -1; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; padding-top: 1rem; }
+  .hero-photo-wrap { order: -1; flex-direction: column; }
   .hero-photo-ring { width: 220px; height: 220px; }
-  .hero-badges { right: -10px; bottom: 0; }
+  .hero-badges { position: relative; right: auto; bottom: auto; flex-direction: row; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
   .hero-cta { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -619,6 +620,7 @@ footer strong { color: var(--accent); }
 }
 @media (max-width: 480px) {
   section { padding: 4rem 1.25rem; }
+  #hero { padding-top: 100px; padding-bottom: 4rem; }
   nav { padding: 0 1.25rem; }
 }
 </style>
@@ -681,6 +683,61 @@ footer strong { color: var(--accent); }
   </div>
 </section>
 
+<section id="about">
+  <div class="container reveal">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Career Objective</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>DevOps fresher pursuing MCA in Cloud Technology & DevOps, with hands-on experience in CI/CD pipelines, containerization, and cloud infrastructure using AWS, Kubernetes, and Terraform.</p>
+        <p>Seeking a 6-month DevOps internship to contribute to real-world infrastructure automation and deployment workflows. Available for night shift.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">1+</div>
+          <div class="stat-label">Years Exp.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Internships</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Major Projects</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container reveal">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-sub">Tools and technologies I use to build and automate cloud infrastructure.</p>
+    
+    <div class="skills-grid">
+      <div class="skill-chip"><span class="skill-icon">🐧</span> Ubuntu / Red Hat</div>
+      <div class="skill-chip"><span class="skill-icon">🗂️</span> Git & GitHub</div>
+      <div class="skill-chip"><span class="skill-icon">⚙️</span> Jenkins</div>
+      <div class="skill-chip"><span class="skill-icon">🐳</span> Docker</div>
+      <div class="skill-chip"><span class="skill-icon">☸️</span> Kubernetes</div>
+      <div class="skill-chip"><span class="skill-icon">☁️</span> AWS</div>
+      <div class="skill-chip"><span class="skill-icon">☁️</span> Microsoft Azure</div>
+      <div class="skill-chip"><span class="skill-icon">🏗️</span> Terraform</div>
+      <div class="skill-chip"><span class="skill-icon">📈</span> Prometheus</div>
+      <div class="skill-chip"><span class="skill-icon">📊</span> Grafana</div>
+      <div class="skill-chip"><span class="skill-icon">🐍</span> Python</div>
+      <div class="skill-chip"><span class="skill-icon">💻</span> Shell Scripting</div>
+      <div class="skill-chip"><span class="skill-icon">⌨️</span> C, C++, Java</div>
+    </div>
+  </div>
+</section>
+
 <section id="projects">
   <div class="container reveal">
     <div class="section-label">Portfolio</div>
@@ -723,6 +780,96 @@ footer strong { color: var(--accent); }
   </div>
 </section>
 
+<section id="experience">
+  <div class="container reveal">
+    <div class="section-label">Career</div>
+    <h2 class="section-title">Work Experience</h2>
+    
+    <div class="exp-timeline">
+      <div class="exp-item reveal">
+        <div class="exp-dot">02</div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">DevOps Intern (Microsoft Azure)</div>
+              <div class="exp-company">GRRAS Solutions Pvt. Ltd.</div>
+            </div>
+            <div class="exp-duration">May 2026 – Aug 2026</div>
+          </div>
+          <ul class="exp-achievements">
+            <li>Currently undergoing an internship focused on Microsoft Azure with DevOps.</li>
+            <li>Learning and applying cloud methodologies aligned with company practices.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal reveal-delay-1">
+        <div class="exp-dot">01</div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Training & Internship Program</div>
+              <div class="exp-company">DMV CoreTech</div>
+            </div>
+            <div class="exp-duration">Jan 2026 – Apr 2026</div>
+          </div>
+          <ul class="exp-achievements">
+            <li>Participated in structured training followed by guided internship exposure.</li>
+            <li>Gained practical industry experience working alongside professionals.</li>
+            <li>Focused on modern technologies and practical applications to Develop, Modernize, and Visualize digital solutions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container reveal">
+    <div class="section-label">Academic</div>
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-degree">Master of Computer Applications (Cloud Technology & DevOps)</div>
+        <div class="edu-school">Poornima University, Jaipur</div>
+        <div class="edu-detail">Expected 2027</div>
+      </div>
+      <div>
+        <div class="edu-year">2027</div>
+        <div class="edu-status" style="color: #3b82f6; background: rgba(59,130,246,0.1);">Pursuing</div>
+      </div>
+    </div>
+
+    <div class="edu-card reveal reveal-delay-1">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-degree">Bachelor of Computer Applications</div>
+        <div class="edu-school">Seeta Devi College, Bhilwara</div>
+        <div class="edu-detail">Percentage: 79%</div>
+      </div>
+      <div>
+        <div class="edu-year">2025</div>
+        <div class="edu-status">Completed</div>
+      </div>
+    </div>
+
+    <div class="edu-card reveal reveal-delay-2">
+      <div class="edu-icon">🏫</div>
+      <div>
+        <div class="edu-degree">Senior Secondary (12th)</div>
+        <div class="edu-school">Govt. Senior Secondary School, Bhilwara</div>
+        <div class="edu-detail">Percentage: 71.60%</div>
+      </div>
+      <div>
+        <div class="edu-year">2022</div>
+        <div class="edu-status">Completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="container reveal">
     <div class="section-label">Contact</div>
@@ -731,7 +878,7 @@ footer strong { color: var(--accent); }
 
     <div class="contact-grid">
       <div class="contact-links">
-        <a href="mailto:mayankmishra29280@gmail.com" class="contact-item">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mayankmishra29280@gmail.com" target="_blank" class="contact-item">
           <div class="contact-item-icon">@</div>
           <div class="contact-item-info">
             <div class="label">Email</div>
@@ -763,7 +910,7 @@ footer strong { color: var(--accent); }
       <div class="contact-cta">
         <h3>Let's build something!</h3>
         <p>I am always interested in discussing new projects, DevOps methodologies, and cloud solutions.</p>
-        <a href="mailto:mayankmishra29280@gmail.com" class="btn-primary">Say Hello</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mayankmishra29280@gmail.com" target="_blank" class="btn-primary">Say Hello</a>
       </div>
     </div>
   </div>
